@@ -1,4 +1,10 @@
-﻿using System.Net;
+﻿using System.IO;
+using System.Net;
+using System.Text;
+using System.Xml;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using OvetimePolicies_api.Dto;
 
 namespace OvetimePolicies_api;
 
@@ -14,17 +20,14 @@ sealed public class RequestCultureMiddleware
     public async Task InvokeAsync(HttpContext context)
     {
 
-        var path = context.Request.Path;
-        var segments = path.Value?.Split('/');
-
-        //context.GetRouteData().Values.TryGetValue("dataType", out var dataType);
-        if (segments.Length < 2)
-            await returnBadRequest(context);
-        
-        var dataType = segments[1]?.ToLower();
+        context.Request.RouteValues.TryGetValue("datatype", out var data);
+        var dataType = data.ToString().ToLower();
 
         if (string.IsNullOrEmpty(dataType))
+        {
             await returnBadRequest(context);
+            return;
+        }
 
         if (dataType == "json")
         {
@@ -32,6 +35,24 @@ sealed public class RequestCultureMiddleware
         }
         else if (dataType == "xml")
         {
+            var stream = context.Request.Body;
+            var originalContent = await new StreamReader(stream).ReadToEndAsync();
+
+            XmlDocument doc = new XmlDocument();
+            doc.LoadXml(originalContent);
+
+            var json = JsonConvert.SerializeXmlNode(doc);
+            var jObject = JObject.Parse(json);
+            jObject.TryGetValue("data",out var d);
+
+
+
+            var requestContent = new StringContent(json, Encoding.UTF8, "application/json");
+            stream = await requestContent.ReadAsStreamAsync();//modified stream
+
+
+
+            context.Request.Body = stream;
 
         }
         else if (dataType == "cs")
@@ -45,6 +66,7 @@ sealed public class RequestCultureMiddleware
         else
         {
             await returnBadRequest(context);
+            return;
         }
 
 
@@ -57,7 +79,6 @@ sealed public class RequestCultureMiddleware
         context.Response.ContentType = "text/plain";
         await context.Response.WriteAsync("dataType not found");
         //ToDo: log 
-        return;
     }
 }
 
