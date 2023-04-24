@@ -229,9 +229,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\armin\\source\\repos\\OvetimePolicies\\OvetimePolicies\\OvetimePolicies.csproj",
-      "projectName": "OvetimePolicies",
-      "projectPath": "C:\\Users\\armin\\source\\repos\\OvetimePolicies\\OvetimePolicies\\OvetimePolicies.csproj",
+      "projectUniqueName": "C:\\Users\\armin\\source\\repos\\OvetimePolicies\\OvetimePolicies\\OvetimePolicies_Api.csproj",
+      "projectName": "OvetimePolicies_Api",
+      "projectPath": "C:\\Users\\armin\\source\\repos\\OvetimePolicies\\OvetimePolicies\\OvetimePolicies_Api.csproj",
       "packagesPath": "C:\\Users\\armin\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\armin\\source\\repos\\OvetimePolicies\\OvetimePolicies\\obj\\",
       "projectStyle": "PackageReference",

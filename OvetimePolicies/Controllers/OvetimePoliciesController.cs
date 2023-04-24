@@ -1,11 +1,22 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using OvetimePolicies_api.Dto;
 
-namespace OvetimePolicies.Controllers
+namespace OvetimePolicies.Controllers;
+
+[Route("{datatype}/[controller]")]
+[ApiController]
+public class OvetimePoliciesController : ControllerBase
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    public class ValuesController : ControllerBase
+    public OvetimePoliciesController()
     {
+
     }
+
+    [HttpPost]
+    public async Task<ActionResult> add([FromBody] PersonDto data)
+    {
+        return Ok();
+    }
+
 }

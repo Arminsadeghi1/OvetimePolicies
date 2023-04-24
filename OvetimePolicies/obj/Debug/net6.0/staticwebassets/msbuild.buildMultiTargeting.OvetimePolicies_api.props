@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\OvetimePolicies_api.props" />
+</Project>
