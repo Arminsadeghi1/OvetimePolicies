@@ -13,8 +13,8 @@ public class OvetimePoliciesController : ControllerBase
 
     }
 
-    [HttpPost]
-    public async Task<ActionResult> add([FromBody] PersonDto data)
+    [HttpPost()]
+    public async Task<ActionResult> add([FromBody] CommandDto data)
     {
         return Ok();
     }

@@ -1,10 +1,9 @@
-﻿using System.IO;
+﻿using Microsoft.AspNetCore.DataProtection.KeyManagement;
+using Newtonsoft.Json;
+using OvetimePolicies_api.Dto;
 using System.Net;
 using System.Text;
 using System.Xml;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using OvetimePolicies_api.Dto;
 
 namespace OvetimePolicies_api;
 
@@ -22,6 +21,7 @@ sealed public class RequestCultureMiddleware
 
         context.Request.RouteValues.TryGetValue("datatype", out var data);
         var dataType = data.ToString().ToLower();
+
 
         if (string.IsNullOrEmpty(dataType))
         {
@@ -42,18 +42,18 @@ sealed public class RequestCultureMiddleware
             doc.LoadXml(originalContent);
 
             var json = JsonConvert.SerializeXmlNode(doc);
-            var jObject = JObject.Parse(json);
-            jObject.TryGetValue("data",out var d);
 
+            var dataSource = JsonConvert.DeserializeObject<CommandDto>(json);
 
+            var a = JsonConvert.SerializeObject(dataSource);
 
-            var requestContent = new StringContent(json, Encoding.UTF8, "application/json");
-            stream = await requestContent.ReadAsStreamAsync();//modified stream
-
-
+            var requestContent = new StringContent(a, Encoding.UTF8, "application/json");
+            stream = await requestContent.ReadAsStreamAsync();
 
             context.Request.Body = stream;
-
+            context.Request.ContentLength = stream.Length;
+            context.Request.Headers["Content-Type"] = "application/json";
+            context.Response.ContentType = "application/json";
         }
         else if (dataType == "cs")
         {
@@ -61,6 +61,54 @@ sealed public class RequestCultureMiddleware
         }
         else if (dataType == "custom")
         {
+            var stream = context.Request.Body;
+            var originalContent = await new StreamReader(stream).ReadToEndAsync();
+
+            try
+            {
+                var key = originalContent.Split("\n")[0].Split('/');
+                var value = originalContent.Split("\n")[1].Split('/');
+                key[key.Length - 1] = key[key.Length - 1].Replace("\r", "");
+                if (key.Length > value.Length
+
+                    )
+                {
+                    await returnBadRequest(context);
+                    return;
+                }
+
+                DateTime.TryParse(value[Array.FindIndex(key, f => f.ToLower().Equals("date"))], out var _date);
+                decimal.TryParse(value[Array.FindIndex(key, f => f.ToLower().Equals("allowance"))], out var _allowance);
+                decimal.TryParse(value[Array.FindIndex(key, f => f.ToLower().Equals("basicsalary"))], out var _basicsalary);
+                decimal.TryParse(value[Array.FindIndex(key, f => f.ToLower().Equals("transportation"))], out var _transportation);
+
+                var customData = new CommandDto()
+                {
+                    data = new PersonDto()
+                    {
+                        FirstName = value[Array.FindIndex(key, f => f.ToLower().Equals("firstname"))],
+                        LastName = value[Array.FindIndex(key, f => f.ToLower().Equals("lastname"))],
+                        Allowance = _allowance,
+                        BasicSalary = _basicsalary,
+                        Transportation = _transportation,
+                        Date = _date,
+                    }
+                };
+
+                var requestContent = new StringContent(JsonConvert.SerializeObject(customData), Encoding.UTF8, "application/json");
+                stream = await requestContent.ReadAsStreamAsync();
+            }
+            catch (Exception)
+            {
+                await returnBadRequest(context);
+                return;
+            }
+
+
+            context.Request.Body = stream;
+            context.Request.ContentLength = stream.Length;
+            context.Request.Headers["Content-Type"] = "application/json";
+            context.Response.ContentType = "application/json";
 
         }
         else
