@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.DataProtection.KeyManagement;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using OvetimePolicies_api.Dto;
 using System.Net;
 using System.Text;
@@ -43,17 +42,11 @@ sealed public class RequestCultureMiddleware
 
             var json = JsonConvert.SerializeXmlNode(doc);
 
-            var dataSource = JsonConvert.DeserializeObject<CommandDto>(json);
-
-            var a = JsonConvert.SerializeObject(dataSource);
-
-            var requestContent = new StringContent(a, Encoding.UTF8, "application/json");
+            var requestContent = new StringContent(json, Encoding.UTF8, "application/json");
             stream = await requestContent.ReadAsStreamAsync();
 
             context.Request.Body = stream;
-            context.Request.ContentLength = stream.Length;
-            context.Request.Headers["Content-Type"] = "application/json";
-            context.Response.ContentType = "application/json";
+            context.Request.ContentType = "application/json";
         }
         else if (dataType == "cs")
         {
@@ -69,13 +62,6 @@ sealed public class RequestCultureMiddleware
                 var key = originalContent.Split("\n")[0].Split('/');
                 var value = originalContent.Split("\n")[1].Split('/');
                 key[key.Length - 1] = key[key.Length - 1].Replace("\r", "");
-                if (key.Length > value.Length
-
-                    )
-                {
-                    await returnBadRequest(context);
-                    return;
-                }
 
                 DateTime.TryParse(value[Array.FindIndex(key, f => f.ToLower().Equals("date"))], out var _date);
                 decimal.TryParse(value[Array.FindIndex(key, f => f.ToLower().Equals("allowance"))], out var _allowance);
@@ -104,19 +90,14 @@ sealed public class RequestCultureMiddleware
                 return;
             }
 
-
             context.Request.Body = stream;
-            context.Request.ContentLength = stream.Length;
-            context.Request.Headers["Content-Type"] = "application/json";
-            context.Response.ContentType = "application/json";
-
+            context.Request.ContentType = "application/json";
         }
         else
         {
             await returnBadRequest(context);
             return;
         }
-
 
         await _next(context);
     }
