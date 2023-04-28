@@ -2421,11 +2421,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies\\OvetimePolicies_api.csproj",
+      "projectUniqueName": "C:\\Users\\armin\\source\\repos\\OvetimePolicies2\\OvetimePolicies\\OvetimePolicies_api.csproj",
       "projectName": "OvetimePolicies_api",
-      "projectPath": "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies\\OvetimePolicies_api.csproj",
+      "projectPath": "C:\\Users\\armin\\source\\repos\\OvetimePolicies2\\OvetimePolicies\\OvetimePolicies_api.csproj",
       "packagesPath": "C:\\Users\\armin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies\\obj\\",
+      "outputPath": "C:\\Users\\armin\\source\\repos\\OvetimePolicies2\\OvetimePolicies\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\armin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2442,14 +2442,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies_Core\\OvetimePolicies_Core.csproj": {
-              "projectPath": "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies_Core\\OvetimePolicies_Core.csproj"
+            "C:\\Users\\armin\\source\\repos\\OvetimePolicies2\\OvetimePolicies_Core\\OvetimePolicies_Core.csproj": {
+              "projectPath": "C:\\Users\\armin\\source\\repos\\OvetimePolicies2\\OvetimePolicies_Core\\OvetimePolicies_Core.csproj"
             },
-            "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies_Data\\OvetimePolicies_Data.csproj": {
-              "projectPath": "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies_Data\\OvetimePolicies_Data.csproj"
+            "C:\\Users\\armin\\source\\repos\\OvetimePolicies2\\OvetimePolicies_Data\\OvetimePolicies_Data.csproj": {
+              "projectPath": "C:\\Users\\armin\\source\\repos\\OvetimePolicies2\\OvetimePolicies_Data\\OvetimePolicies_Data.csproj"
             },
-            "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies_dlls\\OvetimePolicies_dlls.csproj": {
-              "projectPath": "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies_dlls\\OvetimePolicies_dlls.csproj"
+            "C:\\Users\\armin\\source\\repos\\OvetimePolicies2\\OvetimePolicies_dlls\\OvetimePolicies_dlls.csproj": {
+              "projectPath": "C:\\Users\\armin\\source\\repos\\OvetimePolicies2\\OvetimePolicies_dlls\\OvetimePolicies_dlls.csproj"
             }
           }
         }

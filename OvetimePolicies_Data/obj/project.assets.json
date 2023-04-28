@@ -2053,11 +2053,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies_Data\\OvetimePolicies_Data.csproj",
+      "projectUniqueName": "C:\\Users\\armin\\source\\repos\\OvetimePolicies2\\OvetimePolicies_Data\\OvetimePolicies_Data.csproj",
       "projectName": "OvetimePolicies_Data",
-      "projectPath": "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies_Data\\OvetimePolicies_Data.csproj",
+      "projectPath": "C:\\Users\\armin\\source\\repos\\OvetimePolicies2\\OvetimePolicies_Data\\OvetimePolicies_Data.csproj",
       "packagesPath": "C:\\Users\\armin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies_Data\\obj\\",
+      "outputPath": "C:\\Users\\armin\\source\\repos\\OvetimePolicies2\\OvetimePolicies_Data\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\armin\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2074,8 +2074,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies_Core\\OvetimePolicies_Core.csproj": {
-              "projectPath": "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies_Core\\OvetimePolicies_Core.csproj"
+            "C:\\Users\\armin\\source\\repos\\OvetimePolicies2\\OvetimePolicies_Core\\OvetimePolicies_Core.csproj": {
+              "projectPath": "C:\\Users\\armin\\source\\repos\\OvetimePolicies2\\OvetimePolicies_Core\\OvetimePolicies_Core.csproj"
             }
           }
         }
