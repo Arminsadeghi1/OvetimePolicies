@@ -1,5 +1,5 @@
 ﻿using Newtonsoft.Json;
-using OvetimePolicies_dlls.Dtos;
+using OvetimePolicies_api.Dtos;
 using System.Net;
 using System.Text;
 using System.Xml;
@@ -84,7 +84,7 @@ sealed public class RequestCultureMiddleware
                 var requestContent = new StringContent(JsonConvert.SerializeObject(customData), Encoding.UTF8, "application/json");
                 stream = await requestContent.ReadAsStreamAsync();
             }
-            catch (Exception)
+            catch
             {
                 await returnBadRequest(context);
                 return;
