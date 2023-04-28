@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "D0TxnngAYiYvPhjllgXMjrXmNqx/Da/magzH6z0NT805M+l+UyZFg3wgZJ1saVKUdv6dJDWf6J5U1Wig/nBOBA==",
+  "dgSpecHash": "m1SojIh/fEWt9LFdOFYpoRtlMAem4oB1MxRqn2Bg6vlhYKDtsJgwr0UqHvW/Qk2cj92sJdDJSi43e5/ZD1+T5Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\armin\\source\\repos\\OvetimePolicies\\OvetimePolicies\\OvetimePolicies_api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\armin\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\armin\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\armin\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.17.2\\microsoft.visualstudio.azure.containers.tools.targets.1.17.2.nupkg.sha512",
     "C:\\Users\\armin\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\armin\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\armin\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",

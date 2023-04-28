@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using OvetimePolicies_api.Dto;
+﻿using Microsoft.AspNetCore.Mvc;
+using OvetimePolicies_api.Dtos;
+using OvetimePolicies_api.Handlers;
 
 namespace OvetimePolicies.Controllers;
 
@@ -13,10 +13,18 @@ public class OvetimePoliciesController : ControllerBase
 
     }
 
-    [HttpPost()]
-    public async Task<ActionResult> add([FromBody] CommandDto data)
+    [HttpPost]
+    public async Task<ActionResult> OvetimePolicies([FromBody] CommandDto command, [FromServices] AddSalaryHandler handler)
     {
-        return Ok();
+        try
+        {
+            return Ok(handler.AddSalary(command));
+        }
+        catch (Exception)
+        {
+            return NoContent();
+        }
     }
+
 
 }

@@ -21,14 +21,13 @@ if (app.Environment.IsDevelopment())
 }
 
 
-
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
 app.UseRequestCulture();
-app.MapControllers();
 
+app.MapControllers();
 
 
 app.Run();
