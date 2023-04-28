@@ -1,0 +1,10 @@
+C:\Users\armin\Source\Repos\OvetimePolicies2\OvetimePolicies_dlls\bin\Debug\netstandard2.1\OvetimePolicies_dlls.deps.json
+C:\Users\armin\Source\Repos\OvetimePolicies2\OvetimePolicies_dlls\bin\Debug\netstandard2.1\OvetimePolicies_dlls.dll
+C:\Users\armin\Source\Repos\OvetimePolicies2\OvetimePolicies_dlls\bin\Debug\netstandard2.1\OvetimePolicies_dlls.pdb
+C:\Users\armin\Source\Repos\OvetimePolicies2\OvetimePolicies_dlls\obj\Debug\netstandard2.1\OvetimePolicies_dlls.csproj.AssemblyReference.cache
+C:\Users\armin\Source\Repos\OvetimePolicies2\OvetimePolicies_dlls\obj\Debug\netstandard2.1\OvetimePolicies_dlls.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\armin\Source\Repos\OvetimePolicies2\OvetimePolicies_dlls\obj\Debug\netstandard2.1\OvetimePolicies_dlls.AssemblyInfoInputs.cache
+C:\Users\armin\Source\Repos\OvetimePolicies2\OvetimePolicies_dlls\obj\Debug\netstandard2.1\OvetimePolicies_dlls.AssemblyInfo.cs
+C:\Users\armin\Source\Repos\OvetimePolicies2\OvetimePolicies_dlls\obj\Debug\netstandard2.1\OvetimePolicies_dlls.csproj.CoreCompileInputs.cache
+C:\Users\armin\Source\Repos\OvetimePolicies2\OvetimePolicies_dlls\obj\Debug\netstandard2.1\OvetimePolicies_dlls.dll
+C:\Users\armin\Source\Repos\OvetimePolicies2\OvetimePolicies_dlls\obj\Debug\netstandard2.1\OvetimePolicies_dlls.pdb

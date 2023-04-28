@@ -1,5 +1,9 @@
+using Microsoft.EntityFrameworkCore;
 using OvetimePolicies_api;
-using System.Text.Json.Serialization;
+using OvetimePolicies_Data;
+using OvetimePolicies_Data.Handlers;
+using OvetimePolicies_Data.Repositories;
+using OvetimePolicies_dlls;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,8 +14,17 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var app = builder.Build();
+builder.Services.AddDbContext<ApplicationDBContext>(options =>
+                    options.UseSqlServer(builder.Configuration.GetConnectionString("myAppcs")));
 
+builder.Services.AddScoped<IRepository, Repository>();
+
+builder.Services.AddScoped<CalculatorHandler>();
+builder.Services.AddScoped<AddSalaryHandler>();
+builder.Services.AddScoped<EditSalaryHandler>();
+builder.Services.AddScoped<DeleteSalaryHandler>();
+
+var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\armin\\source\\repos\\OvetimePolicies\\OvetimePolicies_dlls\\OvetimePolicies_dlls.csproj",
+      "projectUniqueName": "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies_dlls\\OvetimePolicies_dlls.csproj",
       "projectName": "OvetimePolicies_dlls",
-      "projectPath": "C:\\Users\\armin\\source\\repos\\OvetimePolicies\\OvetimePolicies_dlls\\OvetimePolicies_dlls.csproj",
+      "projectPath": "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies_dlls\\OvetimePolicies_dlls.csproj",
       "packagesPath": "C:\\Users\\armin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\armin\\source\\repos\\OvetimePolicies\\OvetimePolicies_dlls\\obj\\",
+      "outputPath": "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies_dlls\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\armin\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "OvetimePolicies_Core/1.0.0": {
+        "dependencies": {
+          "OvetimePolicies_dlls": "1.0.0"
+        },
+        "runtime": {
+          "OvetimePolicies_Core.dll": {}
+        }
+      },
+      "OvetimePolicies_dlls/1.0.0": {
+        "runtime": {
+          "OvetimePolicies_dlls.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OvetimePolicies_Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "OvetimePolicies_dlls/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

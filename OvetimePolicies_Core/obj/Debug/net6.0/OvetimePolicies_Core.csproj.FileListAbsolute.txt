@@ -1,0 +1,15 @@
+C:\Users\armin\Source\Repos\OvetimePolicies2\OvetimePolicies_Core\bin\Debug\net6.0\OvetimePolicies_Core.deps.json
+C:\Users\armin\Source\Repos\OvetimePolicies2\OvetimePolicies_Core\bin\Debug\net6.0\OvetimePolicies_Core.dll
+C:\Users\armin\Source\Repos\OvetimePolicies2\OvetimePolicies_Core\bin\Debug\net6.0\OvetimePolicies_Core.pdb
+C:\Users\armin\Source\Repos\OvetimePolicies2\OvetimePolicies_Core\bin\Debug\net6.0\OvetimePolicies_dlls.dll
+C:\Users\armin\Source\Repos\OvetimePolicies2\OvetimePolicies_Core\bin\Debug\net6.0\OvetimePolicies_dlls.pdb
+C:\Users\armin\Source\Repos\OvetimePolicies2\OvetimePolicies_Core\obj\Debug\net6.0\OvetimePolicies_Core.csproj.AssemblyReference.cache
+C:\Users\armin\Source\Repos\OvetimePolicies2\OvetimePolicies_Core\obj\Debug\net6.0\OvetimePolicies_Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\armin\Source\Repos\OvetimePolicies2\OvetimePolicies_Core\obj\Debug\net6.0\OvetimePolicies_Core.AssemblyInfoInputs.cache
+C:\Users\armin\Source\Repos\OvetimePolicies2\OvetimePolicies_Core\obj\Debug\net6.0\OvetimePolicies_Core.AssemblyInfo.cs
+C:\Users\armin\Source\Repos\OvetimePolicies2\OvetimePolicies_Core\obj\Debug\net6.0\OvetimePolicies_Core.csproj.CoreCompileInputs.cache
+C:\Users\armin\Source\Repos\OvetimePolicies2\OvetimePolicies_Core\obj\Debug\net6.0\OvetimePolicies_Core.csproj.CopyComplete
+C:\Users\armin\Source\Repos\OvetimePolicies2\OvetimePolicies_Core\obj\Debug\net6.0\OvetimePolicies_Core.dll
+C:\Users\armin\Source\Repos\OvetimePolicies2\OvetimePolicies_Core\obj\Debug\net6.0\refint\OvetimePolicies_Core.dll
+C:\Users\armin\Source\Repos\OvetimePolicies2\OvetimePolicies_Core\obj\Debug\net6.0\OvetimePolicies_Core.pdb
+C:\Users\armin\Source\Repos\OvetimePolicies2\OvetimePolicies_Core\obj\Debug\net6.0\ref\OvetimePolicies_Core.dll

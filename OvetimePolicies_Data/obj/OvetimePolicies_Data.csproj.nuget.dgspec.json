@@ -1,0 +1,203 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies_Data\\OvetimePolicies_Data.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies_Core\\OvetimePolicies_Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies_Core\\OvetimePolicies_Core.csproj",
+        "projectName": "OvetimePolicies_Core",
+        "projectPath": "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies_Core\\OvetimePolicies_Core.csproj",
+        "packagesPath": "C:\\Users\\armin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies_Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\armin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies_dlls\\OvetimePolicies_dlls.csproj": {
+                "projectPath": "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies_dlls\\OvetimePolicies_dlls.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies_Data\\OvetimePolicies_Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies_Data\\OvetimePolicies_Data.csproj",
+        "projectName": "OvetimePolicies_Data",
+        "projectPath": "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies_Data\\OvetimePolicies_Data.csproj",
+        "packagesPath": "C:\\Users\\armin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies_Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\armin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies_Core\\OvetimePolicies_Core.csproj": {
+                "projectPath": "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies_Core\\OvetimePolicies_Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.16, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies_dlls\\OvetimePolicies_dlls.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies_dlls\\OvetimePolicies_dlls.csproj",
+        "projectName": "OvetimePolicies_dlls",
+        "projectPath": "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies_dlls\\OvetimePolicies_dlls.csproj",
+        "packagesPath": "C:\\Users\\armin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\armin\\Source\\Repos\\OvetimePolicies2\\OvetimePolicies_dlls\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\armin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

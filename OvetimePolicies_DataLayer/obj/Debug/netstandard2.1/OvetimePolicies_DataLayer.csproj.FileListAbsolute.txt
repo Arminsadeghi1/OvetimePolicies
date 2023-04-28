@@ -1,0 +1,5 @@
+C:\Users\armin\Source\Repos\OvetimePolicies2\OvetimePolicies_DataLayer\obj\Debug\netstandard2.1\OvetimePolicies_DataLayer.csproj.AssemblyReference.cache
+C:\Users\armin\Source\Repos\OvetimePolicies2\OvetimePolicies_DataLayer\obj\Debug\netstandard2.1\OvetimePolicies_DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\armin\Source\Repos\OvetimePolicies2\OvetimePolicies_DataLayer\obj\Debug\netstandard2.1\OvetimePolicies_DataLayer.AssemblyInfoInputs.cache
+C:\Users\armin\Source\Repos\OvetimePolicies2\OvetimePolicies_DataLayer\obj\Debug\netstandard2.1\OvetimePolicies_DataLayer.AssemblyInfo.cs
+C:\Users\armin\Source\Repos\OvetimePolicies2\OvetimePolicies_DataLayer\obj\Debug\netstandard2.1\OvetimePolicies_DataLayer.csproj.CoreCompileInputs.cache

@@ -1,5 +1,5 @@
 ﻿using Newtonsoft.Json;
-using OvetimePolicies_api.Dtos;
+using OvetimePolicies_Core.Dtos;
 using System.Net;
 using System.Text;
 using System.Xml;
@@ -68,7 +68,7 @@ sealed public class RequestCultureMiddleware
                 decimal.TryParse(value[Array.FindIndex(key, f => f.ToLower().Equals("basicsalary"))], out var _basicsalary);
                 decimal.TryParse(value[Array.FindIndex(key, f => f.ToLower().Equals("transportation"))], out var _transportation);
 
-                var customData = new CommandDto()
+                var customData = new AddCommandDto()
                 {
                     data = new PersonDto()
                     {
