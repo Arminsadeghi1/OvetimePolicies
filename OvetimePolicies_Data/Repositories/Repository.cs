@@ -21,7 +21,8 @@ sealed public class Repository : IRepository
     public async Task<Guid> AddPerson(AddPersonDto person)
     {
         var entity = new Person(person);
-       await _context.AddAsync(entity);
+        await _context.AddAsync(entity);
+        await _context.SaveChangesAsync();
 
         return entity.Id;
     }
