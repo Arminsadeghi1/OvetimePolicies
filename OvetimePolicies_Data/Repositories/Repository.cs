@@ -22,7 +22,7 @@ sealed public class Repository : IRepository
     {
         var entity = new Person(person);
        await _context.AddAsync(entity);
-
+        await _context.SaveChangesAsync();
         return entity.Id;
     }
 

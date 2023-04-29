@@ -18,6 +18,7 @@ builder.Services.AddDbContext<ApplicationDBContext>(options =>
                     options.UseSqlServer(builder.Configuration.GetConnectionString("myAppcs")));
 
 builder.Services.AddScoped<IRepository, Repository>();
+builder.Services.AddScoped<IQueryRepository, QueryRepository>();
 
 builder.Services.AddScoped<CalculatorHandler>();
 builder.Services.AddScoped<AddSalaryHandler>();
