@@ -24,6 +24,9 @@ builder.Services.AddScoped<AddSalaryHandler>();
 builder.Services.AddScoped<EditSalaryHandler>();
 builder.Services.AddScoped<DeleteSalaryHandler>();
 
+builder.Services.AddScoped<GetByIdHandler>();
+builder.Services.AddScoped<GetAllHandler>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

@@ -7,8 +7,8 @@ namespace OvetimePolicies_Data.Handlers;
 
 sealed public class AddSalaryHandler
 {
-    private CalculatorHandler _calculator;
-    private IRepository _repository;
+    private readonly CalculatorHandler _calculator;
+    private readonly IRepository _repository;
 
     public AddSalaryHandler(CalculatorHandler handler, IRepository repository)
     {

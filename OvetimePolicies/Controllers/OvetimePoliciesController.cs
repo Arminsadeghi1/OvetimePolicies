@@ -52,4 +52,29 @@ public class OvetimePoliciesController : ControllerBase
         }
     }
 
+    [HttpGet("get/{id}")]
+    public async Task<ActionResult> Get([FromRoute] Guid id, [FromServices] GetByIdHandler handler)
+    {
+        try
+        {
+            return Ok(handler.Handle(id));
+        }
+        catch
+        {
+            return NoContent();
+        }
+    }
+    [HttpGet("get-all")]
+    public async Task<ActionResult> GetAll([FromServices] GetAllHandler handler)
+    {
+        try
+        {
+            return Ok(handler.Handle());
+        }
+        catch
+        {
+            return NoContent();
+        }
+    }
+
 }
